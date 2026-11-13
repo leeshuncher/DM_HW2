@@ -330,7 +330,7 @@ An analyst escalates when the attribution sits on the known illicit mode and dis
 
 \paragraph{Practical impact.}
 At $\tau_{\mathrm{F1}}$, \ours{} raises 2,459 alerts in 15 steps (${\approx}$164 per step) and catches 65\% (${\approx}$704) of 1,083 illicit test transactions; 71\% of alerts are false (2.5 per catch).
-With 30 alerts per step, \ours{} catches 218 illicit transactions (precision 0.48, 7.4$\times$ random review), supervised RF 239 and XGBoost 245: lacking illicit labels costs 21--27 catches per 450 reviews, so \ours{} suits cold-start triage.
+With 30 alerts per step, \ours{} catches 218 illicit transactions (precision 0.48, 7.4$\times$ random review), supervised RF 239 and XGBoost 245: lacking illicit labels costs 21--27 catches per 450 reviews, so it suits cold-start triage.
 
 % ---------------------------------------------------------------------------
 \section{Conclusion and Limitations}
@@ -360,19 +360,19 @@ Next: (i) after a drift alarm, query analyst labels for top-scored unlabeled tra
 
 {\raggedright\hyphenpenalty=10000
 \begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=2pt]
-\item \member{A}{李尚哲}{314580057}: EDA; vetted the topic.
-\item \member{B}{呂丞頤}{314580055}: assessed candidate topics.
-\item \member{C}{黃駿甯}{314580075}: presentation slides.
-\item \member{D}{吳美真}{414551035}: drafted the paper.
-\item \member{E}{孫傅康}{112550176}: code, slides, coordination.
-\item \member{F}{傅維雨}{112550149}: coordination, review.
-\item \member{G}{張凱華}{315554024}: review, topic vetting.
-\item \member{H}{李玠廷}{315554034}: obtained the dataset.
+\item \member{A}{李尚哲}{314580057}: EDA, Fig.~\ref{fig:eda} (\S4); error analysis, Table~\ref{tab:cases} (\S8); repository; topic vetting.
+\item \member{B}{呂丞頤}{314580055}: topic survey; drafted \S2.
+\item \member{C}{黃駿甯}{314580075}: slides; Fig.~\ref{fig:pipeline} (\S5).
+\item \member{D}{吳美真}{414551035}: drafted \S1--\S3, \S9.
+\item \member{E}{孫傅康}{112550176}: code, \S6--\S7 runs; slides.
+\item \member{F}{傅維雨}{112550149}: coordinator; review \S7--8.
+\item \member{G}{張凱華}{315554024}: vetted topic, refs and \S8.
+\item \member{H}{李玠廷}{315554034}: dataset; Table~\ref{tab:data} (\S3).
 \end{itemize}
 }
 
 \paragraph{AI usage statement.}
-We used Claude Code for code and drafting; the team chose the question and verified every number and citation.
+Claude Code (Opus~5.5) wrote code and polished text; the team chose topic and method and verified all numbers and citations.
 
 \bibliography{refs}
 
